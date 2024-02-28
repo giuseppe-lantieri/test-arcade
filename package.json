@@ -1,0 +1,20 @@
+{
+    "name": "template-vite-ts",
+    "description": "A Phaser 3 pong version using  Vite TypeScript template and dev container. For the poriginal template you can found here https://github.com/phaserjs/template-vite-ts.git",
+    "version": "1.0.0",
+    "author": "Giuseppe Lantieri",
+    "license": "MIT",
+    "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
+    "scripts": {
+        "dev": "vite --config vite/config.dev.mjs",
+        "build": "vite build --config vite/config.prod.mjs"
+    },
+    "devDependencies": {
+        "terser": "^5.27.2",
+        "typescript": "^5.3.3",
+        "vite": "^5.1.4"
+    },
+    "dependencies": {
+        "phaser": "^3.80.0"
+    }
+}
