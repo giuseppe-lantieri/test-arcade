@@ -1,5 +1,6 @@
 # Intent
-Made this repository just for showing some skill and use of basilar typescript. This isn't a main project and is only for the purpose of fun. I used the dev-container only to just prove it. All the structure and major of file of this repository are from the vite+ typescript template of Phaser, you can found on this link [text](https://github.com/phaserjs/template-vite-ts.git).
+
+Made this repository just for showing some skill and use of basilar typescript. This isn't a main project and is only for the purpose of fun. I used the dev-container only to just prove it. All the structure and major of file of this repository are from the vite+ typescript template of Phaser, you can found on this [link](https://github.com/phaserjs/template-vite-ts.git).
 
 # Phaser Vite TypeScript Template
 
@@ -15,10 +16,10 @@ This template has been updated for:
 
 ## Available Commands
 
-| Command | Description |
-|---------|-------------|
-| `npm install` | Install project dependencies |
-| `npm run dev` | Launch a development web server |
+| Command         | Description                                    |
+| --------------- | ---------------------------------------------- |
+| `npm install`   | Install project dependencies                   |
+| `npm run dev`   | Launch a development web server                |
 | `npm run build` | Create a production build in the `dist` folder |
 
 ## Template Project Structure

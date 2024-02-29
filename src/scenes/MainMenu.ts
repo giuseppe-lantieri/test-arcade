@@ -14,18 +14,30 @@ export class MainMenu extends Scene {
 
         this.logo = this.add.image(512, 300, 'logo');
 
-        this.add.rectangle(512, 460, 250, 50, 0xffffff, 0.5).setOrigin(0.5)
-        this.title = this.add.text(512, 460, 'Pong', {
-            fontFamily: 'Arial Black', fontSize: 38, color: '#ffffff',
-            stroke: '#000000', strokeThickness: 8,
-            align: 'center'
-        }).setOrigin(0.5);
+        const startingPoint = {
+            x: 512, y: 460, width: 250, height: 50
+        }
+        let buttons = [
+            { name: "Pong" },
+            { name: "Arcanoid" },
+        ]
 
-        this.input.on('pointerdown', ({ position }: any): void => {
-            if (position.x > 512 - 250 && position.x < 512 + 250 && position.y > 460 - 50 && position.y < 450 + 50) {
-                this.scene.start('Pong');
-            }
+        buttons.forEach((button, index) => {
+            let x = startingPoint.x;
+            let y = startingPoint.y + (index * (startingPoint.height + 10));
+            this.add.rectangle(x, y, startingPoint.width, startingPoint.height, 0xffffff, 0.5).setOrigin(0.5)
+            this.title = this.add.text(x, y, button.name, {
+                fontFamily: 'Arial Black', fontSize: 38, color: '#ffffff',
+                stroke: '#000000', strokeThickness: 8,
+                align: 'center'
+            }).setOrigin(0.5);
 
+            this.input.on('pointerdown', ({ position }: any): void => {
+                if ((position.x > x - startingPoint.width && position.x < x + startingPoint.width) &&
+                    (position.y > y - startingPoint.height && position.y < y + startingPoint.height)) {
+                    this.scene.start(button.name);
+                }
+            });
         });
     }
 }

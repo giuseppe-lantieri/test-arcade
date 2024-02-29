@@ -1,0 +1,20 @@
+{
+	"semi": false,
+	"overrides": [
+		{
+			"files": "*.json",
+			"options": {
+				"tabWidth": 4,
+				"editorconfig": true
+			}
+		},
+		{
+			"files": ["*.ts"],
+			"options": {
+				"semi": true,
+				"tabWidth": 4,
+				"trailingComma": "all"
+			}
+		}
+	]
+}
