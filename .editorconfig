@@ -12,8 +12,13 @@ insert_final_newline = true
 
 # Matches multiple files with brace expansion notation
 # Set default charset
-[*.{js,ts,json}]
+[*.{json}]
 max_line_length = 32
+charset = utf-8
+indent_style = tab
+tab_width = 4
+
+[*.{ts,js}]
 charset = utf-8
 indent_style = tab
 tab_width = 4
